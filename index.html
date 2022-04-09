@@ -10,189 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-  }
-  h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }  
-  .jumbotron {
-    background-color: #f4511e;
-    color: #fff;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
-  .logo-small {
-    color: #f4511e;
-    font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-  }
-  .carousel-indicators li {
-    border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-    background-color: #f4511e;
-  }
-  .item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-  }
-  .item span {
-    font-style: normal;
-  }
-  .panel {
-    border: 1px solid #f4511e; 
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #f4511e;
-  }
-  .panel-heading {
-    color: #fff !important;
-    background-color: #f4511e !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-    background-color: white !important;
-  }
-  .panel-footer h3 {
-    font-size: 32px;
-  }
-  .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-  }
-  .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
-    }
-  }
-  .navbar-brand>img {
-    display: block;
-    width: 5em;
-  }
-  </style>
+  <link rel="stylesheet" href="style.css"></link>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -204,12 +22,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage"><img src="logo.png"></a>
+      <a class="navbar-brand" href="#myPage"><img src="images/logo.png"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
+        <!-- <li><a href="#services">SERVICES</a></li> -->
         <li><a href="https://forms.gle/d4AcfQjt5EonCsWN7">ADMMISSION FORM</a></li>
         <li><a href="#pricing">FEE STRUCTURE</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -235,9 +53,23 @@
   <div class="row">
     <div class="col-sm-8">
       <h2>About School</h2><br>
-      <h4>To be filled</h4><br>
-      <p>To be filled</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+      <h4>Established 1997<br>Registration No.: 297/BEP/MUZ<br>U-DISE Code: 10140000945</h4>
+      <p>A co-Ed. school exclusively for day-scholars with CBSE curriculum, regisered with the Government of Bihar and run under Bihar Public School & Children Welfare Association</p>
+      <h4>Our Special features</h4>
+      <ul>
+        <li>A school with difference</li>
+        <li>Centrally located at Sakra</li>
+        <li>Own land and spacious building</li>
+        <li>Grand Infrastructure, playground, library and computer lab</li>
+        <li>English medium and CBSE curriculum</li>
+        <li>Electricity, drinking water and sanitation</li>
+        <li>A co-Ed. school from  Nursery to Class-10</li>
+        <li>Transport facility for remote areas</li>
+        <li>Highly educated and much experienced teachers</li>
+        <li>Separate segment to weak and competitive students</li>
+        <li>Complete guidance by a scholar and experienced director</li>
+      </ul>
+      <br><a href="https://docs.google.com/forms/d/e/1FAIpQLSeEgfw7rB7yW44kgjsURoG2KokjVy3Zzfio6KJTNLKLVcmKZA/viewform?embedded=true" class="btn btn-danger">Get In Touch</a>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-signal logo"></span>
@@ -253,13 +85,13 @@
     <div class="col-sm-8">
       <h2>Our Values</h2><br>
       <h4><strong>MISSION:</strong> The school was established on 9<sup>th</sup> march of 1997 to provide a quality education and all-round development of the rural pupils in this periphery. The concious and honest effort of it's director nurtured so many alumni to prestigeous destinations. The main focus of the establisher of this school is not only to build careers of his desciples, but to boost them up to their moral and ethical heights and moulding them into complete and practical personalities.</h4><br>
-      <p><strong>VISION:</strong> The school is with a difference with a motto of <q><b>Tradition of excellence</b></q>. It provides unparalleled study with Uprising attitude, Practical education alog with Scientific method. The logo signifies <q><b>तमसो मा ज्योतिर्गमय</b></q> and <q><b>ज्ञान, विज्ञान और कला</b></q>.</p>
+      <p><strong>VISION:</strong> The school is with difference with a motto of <q><b>Tradition of excellence</b></q>. It provides unparalleled study with Uprising attitude, Practical education alog with Scientific method. The logo signifies <q><b>तमसो मा ज्योतिर्गमय</b></q> and <q><b>ज्ञान, विज्ञान और कला</b></q>.</p>
     </div>
   </div>
 </div>
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
+<!-- <div id="services" class="container-fluid text-center">
   <h2>SERVICES</h2>
   <h4>What we offer</h4>
   <br>
@@ -298,36 +130,10 @@
       <p>Tune you to your best.</p>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Engineers" width="400" height="300">
-        <p><strong>Engineeers</strong></p>
-        <p>Yes, we taught Engineeers</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="Doctors" width="400" height="300">
-        <p><strong>Doctors</strong></p>
-        <p>We taught Doctors</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="Lawyers" width="400" height="300">
-        <p><strong>Lawyers</strong></p>
-        <p>Yes, Lawyers are our students</p>
-      </div>
-    </div>
-  </div><br>
-  
   <h2>What our Alumni say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -340,13 +146,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"This school is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+        <h4>"This school is the best. I am so happy with the result!"<br><span>Dr. Sanjay Shekhar, Legal Advisor, Govt. of Chhatisgarh</span></h4>
       </div>
       <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+        <h4>"I am proud to be it's worthy alumnus"<br><span>Kundan Kumar, Alumni, IIT Kanpur</span></h4>
       </div>
       <div class="item">
-        <h4>"Could I... BE any more happy with this school?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+        <h4>"This school has a lot of scholar faculties"<br><span>Kunal Kishor, Alumni, IIT Bombay</span></h4>
       </div>
     </div>
 
@@ -432,7 +238,7 @@
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 48 hours.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span><a href="https://www.google.com/maps/place/Utkarsha+Public+School/@25.969035,85.5676704,17z/data=!4m5!3m4!1s0x0:0xd2b81228d09ffd05!8m2!3d25.9707067!4d85.5670206"> Sakra, Muzaffarpur, Bihar</a></p>
-      <p><span class="glyphicon glyphicon-phone"></span><a href="tel:+916212293928"> +91 621 2293928</a></p>
+      <p><span class="glyphicon glyphicon-phone"></span><a href="tel:+919431404049"> +91 9431404049</a></p>
       <p><span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp<a href="mailto:utkarshapublicschool@gmail.com">utkarshapublicschool@gmail.com</a></p>
     </div>
     <div class="col-sm-7 slideanim">
@@ -448,51 +254,16 @@
 </div>
 
 <!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+<img src="images/schoolImage.webp" class="w3-image w3-greyscale-min" style="width:100%">
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Copyright 2021</p>
+  <p>Copyright 2022</p>
 </footer>
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
